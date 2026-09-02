@@ -1,73 +1,61 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History of Neural Networks</title>
     <style>
         :root {
             --bg-color: #0d1117;
             --text-color: #e6edf3;
             --accent-color: #7aa2f7;
+            --max-width: 720px;
+            --padding: 2rem;
+            --line-height: 1.6;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif,
+                "Apple Color Emoji",
+                "Segoe UI Emoji",
+                "Segoe UI Symbol";
             background-color: var(--bg-color);
             color: var(--text-color);
-            line-height: 1.6;
+            line-height: var(--line-height);
             margin: 0;
-            padding: 20px;
+            padding: var(--padding);
             display: flex;
             justify-content: center;
+            box-sizing: border-box;
         }
 
         .container {
-            max-width: 720px;
+            max-width: var(--max-width);
             width: 100%;
-            padding: 20px;
+            padding: 0 var(--padding);
+            box-sizing: border-box;
         }
 
-        header {
-            margin-bottom: 2em;
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--text-color);
+            line-height: 1.2;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
         }
 
         h1 {
-            color: var(--accent-color);
             font-size: 2.5em;
-            margin-bottom: 0.5em;
         }
 
         h2 {
-            color: var(--accent-color);
-            font-size: 1.8em;
-            margin-top: 1.5em;
-            margin-bottom: 0.8em;
-        }
-
-        .lede {
-            font-size: 1.2em;
-            color: var(--text-color);
-        }
-
-        p {
-            margin-bottom: 1em;
-        }
-
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            margin-bottom: 1em;
-        }
-
-        ol {
-            list-style-type: decimal;
-            margin-left: 20px;
-            margin-bottom: 1em;
-        }
-
-        li {
-            margin-bottom: 0.5em;
+            font-size: 2em;
+            border-bottom: 1px solid var(--text-color);
+            padding-bottom: 0.3em;
         }
 
         a {
@@ -79,13 +67,47 @@
             text-decoration: underline;
         }
 
+        p {
+            margin-bottom: 1em;
+        }
+
+        .lede {
+            font-size: 1.25em;
+            font-weight: 300;
+            color: var(--accent-color);
+        }
+
+        ul, ol {
+            margin-left: 1.5em;
+            margin-bottom: 1em;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
         footer {
             margin-top: 3em;
             padding-top: 1em;
-            border-top: 1px solid #30363d;
+            border-top: 1px solid var(--text-color);
             text-align: center;
             font-size: 0.9em;
-            color: #8b949e;
+            color: #a0a8b3;
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --padding: 1rem;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.75em;
+            }
+            .lede {
+                font-size: 1.1em;
+            }
         }
     </style>
 </head>
@@ -93,48 +115,56 @@
     <div class="container">
         <header>
             <h1>History of Neural Networks</h1>
-            <p class="lede">The early conceptualization of artificial neural networks was deeply intertwined with attempts to understand natural intelligence, with foundational work emerging from interdisciplinary collaborations in the mid-20th century.</p>
+            <p class="lede">The history of neural networks is deeply intertwined with the quest to understand and replicate human intelligence, tracing back to early collaborations that sought to establish a logical basis for brain activity.</p>
         </header>
 
         <main>
-            <p>The development of artificial neural networks (ANNs) is a story deeply rooted in the human quest to understand and replicate intelligence. Far from being a recent innovation, the foundational ideas behind ANNs emerged from a rich interdisciplinary collaboration that sought to model the intricacies of the human brain through computational processes.</p>
+            <p>The study of artificial neural networks (ANNs) is fundamentally rooted in theories attempting to explain natural intelligence. Early foundational work involved a deep dive into biological information systems, specifically through the rigorous lens of mathematical logic. This interdisciplinary approach was crucial, as pioneering figures sought to apply computational principles to unravel and explain the intricate functions of the human brain.</p>
 
             <section>
-                <h2>Interdisciplinary Roots</h2>
-                <p>The genesis of artificial neural networks is intrinsically linked to earlier investigations into human and natural intelligence. This foundational understanding laid the groundwork for how we conceptualize and build artificial systems today, demonstrating a continuous scientific lineage from biology and psychology to computer science.</p>
+                <h2>Foundational Concepts</h2>
+                <p>The core of neural network development stems from the early belief that biological intelligence could be formalized. This involved looking at how the brain processes information and attempting to mimic those processes computationally. The early pioneers were driven by the ambitious goal of creating a logical framework for understanding and ultimately replicating brain activity.</p>
+                <ul>
+                    <li>The study of artificial neural networks (ANNs) is rooted in theories of natural intelligence.</li>
+                    <li>Early foundational work involved understanding biological information systems through mathematical logic.</li>
+                    <li>Key early figures sought to apply computational principles to explain brain function.</li>
+                </ul>
             </section>
 
             <section>
-                <h2>Biological Inspiration</h2>
-                <p>A core motivation for early neural network research was the desire to model brain activity as a computational process. Researchers drew direct parallels between biological neural systems and their artificial counterparts, viewing the brain as a complex information processing machine. This biological inspiration continues to influence ANN design.</p>
-            </section>
-
-            <section>
-                <h2>Foundational Collaboration: McCulloch and Pitts</h2>
-                <p>A pivotal moment in the history of neural networks was the collaboration between Warren McCulloch and Walter Pitts. Their work was instrumental in establishing a logical basis for brain activity, mirroring the groundbreaking work Alan Turing provided for computation. This partnership effectively demonstrated that neural processes could be described through formal logic.</p>
-            </section>
-
-            <section>
-                <h2>Mathematical Rigor by Pitts</h2>
-                <p>Walter Pitts, a prodigious young mathematician, was crucial in bringing the necessary mathematical rigor to the nascent field. His ability to analyze biological information systems through a mathematical lens provided the theoretical framework that allowed for the systematic study and modeling of neural processes.</p>
-            </section>
-
-            <section>
-                <h2>McCulloch's Computational Vision</h2>
-                <p>Warren McCulloch played a key role in recognizing the inherently computational nature of brain activity. He actively sought mathematical underpinnings to describe these processes, which led him to collaborate with Pitts, ultimately laying down some of the earliest principles of neural computation.</p>
-            </section>
-
-            <section>
-                <h2>Timeline</h2>
+                <h2>Key Milestones and Timeline</h2>
+                <p>The early history of neural networks saw crucial collaborations that laid the groundwork for future developments.</p>
                 <ol>
-                    <li><strong>Mid-20th Century:</strong> Early collaborative efforts to understand and model intelligence, leading to foundational work on neural networks.</li>
+                    <li><strong>Undated (Mid-20th Century):</strong> Walter Pitts, a young mathematician, joined Rashevsky's group, focusing on mathematical logic applied to biological information systems.</li>
+                    <li><strong>Undated (Mid-20th Century):</strong> Warren McCulloch collaborated with Pitts to develop a logical basis for brain activity, mirroring Turing's work on computation.</li>
                 </ol>
+            </section>
+
+            <section>
+                <h2>Pioneering Figures</h2>
+                <p>Several individuals were instrumental in shaping the early direction of neural network research:</p>
+                <ul>
+                    <li><strong>Walter Pitts (1923–1969):</strong> A mathematician who applied mathematical logic to biological information systems and collaborated with McCulloch.</li>
+                    <li><strong>Warren McCulloch:</strong> Contributed to the idea of brain activity as computational processes and collaborated with Pitts.</li>
+                    <li><strong>Nicolas Rashevsky:</strong> Led a group that included Walter Pitts, focusing on mathematical biology.</li>
+                    <li><strong>Alan Turing:</strong> Provided a logical basis for computation, serving as a conceptual precedent for McCulloch and Pitts' work on brain activity.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Recurring Patterns</h2>
+                <p>Throughout its history, several consistent patterns have emerged in the development of neural networks:</p>
+                <ul>
+                    <li>The development of neural networks is consistently driven by fundamental questions about human intelligence.</li>
+                    <li>Early progress was often a result of interdisciplinary collaboration, particularly between mathematics and biology/neurology.</li>
+                    <li>The desire to formalize biological processes (like brain activity) using logical or mathematical frameworks is a recurring theme.</li>
+                </ul>
             </section>
 
             <section>
                 <h2>Sources</h2>
                 <ul>
-                    <li><a href="https://galileo-unbound.blog/2025/02/05/a-short-history-of-neural-networks/">A Short History of Neural Networks</a></li>
+                    <li><a href="https://galileo-unbound.blog/2025/02/05/a-short-history-of-neural-networks/">https://galileo-unbound.blog/2025/02/05/a-short-history-of-neural-networks/</a></li>
                 </ul>
             </section>
         </main>
