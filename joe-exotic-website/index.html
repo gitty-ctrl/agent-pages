@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+    <title>Joe Exotic Website</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #e6edf3;
+            --accent-color: #7aa2f7;
+            --max-width: 720px;
+            --padding: 20px;
+            --line-height: 1.6;
+        }
+
+        body {
+            font-family:
+                -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: var(--padding);
+            line-height: var(--line-height);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header, main, footer {
+            max-width: var(--max-width);
+            width: 100%;
+            padding: 0 var(--padding);
+            box-sizing: border-box;
+        }
+
+        h1, h2 {
+            color: var(--accent-color);
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+        }
+
+        .lede {
+            font-size: 1.2em;
+            margin-top: 0;
+            margin-bottom: 1.5em;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        ul, ol {
+            margin-bottom: 1em;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        footer {
+            margin-top: 3em;
+            padding-top: 1em;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            font-size: 0.9em;
+            color: rgba(230, 237, 243, 0.7);
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --padding: 15px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .lede {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Joe Exotic Website</h1>
+        <p class="lede">Joseph Maldonado-Passage, known as Joe Exotic, was a flamboyant and controversial exotic animal park owner whose life, marked by eccentricities, legal troubles, and a murder-for-hire conviction, gained widespread attention through the "Tiger King" documentary.</p>
+    </header>
+
+    <main>
+        <p>Joseph Maldonado-Passage, better known as Joe Exotic, rose to infamy as the eccentric owner of an exotic animal park and became a global phenomenon following the release of a Netflix documentary. His life story is a complex tapestry of big cats, country music aspirations, political bids, and a bitter rivalry that ultimately led to his conviction and imprisonment.</p>
+
+        <section>
+            <h2>The G.W. Zoo and Public Persona</h2>
+            <p>Born Joseph Schreibvogel on March 5, 1963, Joe Exotic became the proprietor of the G.W. Zoo (Greater Wynnewood Exotic Animal Park) in Oklahoma, where he housed numerous big cats and other exotic species. He cultivated a distinctive public image, characterized by his signature mullet hairstyle, flamboyant clothing, and a passion for country music. Beyond his animal park, Exotic also ventured into politics, running for President of the United States in 2016 and Governor of Oklahoma in 2018, further cementing his unusual public profile.</p>
+        </section>
+
+        <section>
+            <h2>Rivalry and Legal Troubles</h2>
+            <p>A central element of Joe Exotic's public narrative was his intense and bitter feud with Carole Baskin, the CEO of Big Cat Rescue. Exotic vehemently accused Baskin of hypocrisy and animal abuse, a rivalry that escalated dramatically over time. This animosity, combined with other activities at his park, eventually led to severe legal consequences. In 2019, he was convicted on 17 federal charges of animal abuse and two counts of attempted murder-for-hire against Carole Baskin, resulting in a 22-year federal prison sentence.</p>
+        </section>
+
+        <section>
+            <h2>The "Tiger King" Phenomenon</h2>
+            <p>Joe Exotic's story gained unprecedented global prominence with the release of the Netflix documentary series "Tiger King: Murder, Mayhem and Madness" in March 2020. The series captivated audiences worldwide, thrusting Exotic and his bizarre world into the international spotlight and sparking widespread discussion about exotic animal ownership, personal feuds, and the sensationalism of media.</p>
+        </section>
+
+        <section>
+            <h2>Joe Exotic Timeline</h2>
+            <ol>
+                <li><strong>March 5, 1963:</strong> Born Joseph Schreibvogel.</li>
+                <li><strong>2016:</strong> Ran for President of the United States.</li>
+                <li><strong>2018:</strong> Ran for Governor of Oklahoma.</li>
+                <li><strong>2019:</strong> Convicted on federal charges of animal abuse and attempted murder-for-hire.</li>
+                <li><strong>March 2020:</strong> "Tiger King" documentary released on Netflix.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Sources</h2>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Joe_Exotic">https://en.wikipedia.org/wiki/Joe_Exotic</a></li>
+                <li><a href="https://www.imdb.com/name/nm6352716/bio/">https://www.imdb.com/name/nm6352716/bio/</a></li>
+                <li><a href="https://allthatsinteresting.com/joe-exotic">https://allthatsinteresting.com/joe-exotic</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        Built by the Crew · gitty-ctrl.github.io
+    </footer>
+</body>
+</html>
